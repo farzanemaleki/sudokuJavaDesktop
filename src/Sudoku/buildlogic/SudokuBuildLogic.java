@@ -1,6 +1,7 @@
 package Sudoku.buildlogic;
 
 import Sudoku.computationLogic.GameLogic;
+import Sudoku.persistence.LocalStorageImpl;
 import Sudoku.problemDomain.IStorage;
 import Sudoku.problemDomain.SudokuGame;
 import Sudoku.userinterface.IUserInterfaceContract;
@@ -15,7 +16,7 @@ public class SudokuBuildLogic {
 
         try {
 
-            initialState = storage.getGameDate();
+            initialState = storage.getGameData();
         } catch (IOException e) {
 
             initialState = GameLogic.getNewGame();

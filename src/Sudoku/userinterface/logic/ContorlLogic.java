@@ -22,7 +22,7 @@ public class ContorlLogic implements IUserInterfaceContract.EventListener {
     @Override
     public void onSudokuInput(int x, int y, int input) {
         try {
-            SudokuGame gameData = storage.getGameDate();
+            SudokuGame gameData = storage.getGameData();
             int[][] newGridState = gameData.getCopyOfGridState();
             newGridState[x][y] = input;
 
@@ -51,7 +51,7 @@ public class ContorlLogic implements IUserInterfaceContract.EventListener {
                     GameLogic.getNewGame()
             );
 
-            view.updateBoard(storage.getGameDate());
+            view.updateBoard(storage.getGameData());
         } catch (IOException e) {
             view.showError(Messages.ERROR);
         }
