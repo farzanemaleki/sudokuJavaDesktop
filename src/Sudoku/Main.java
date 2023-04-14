@@ -1,7 +1,7 @@
 package Sudoku;
 
 public class Main {
-    public static void Main(String[] args) {
-        SudokuApplication.main(new string[]{});
+    public static void main(String[] args) {
+        SudokuApplication.main(new String[]{});
     }
 }
