@@ -2,10 +2,10 @@ package Sudoku.problemDomain;
 
 import java.util.Objects;
 
-public class coordinates {
+public class Coordinates {
     private final int x;
     private final int y;
-    public coordinates(int x, int y) {
+    public Coordinates(int x, int y) {
         this.x = x;
         this.y = y;
     }
